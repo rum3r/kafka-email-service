@@ -1,0 +1,8 @@
+com/example/emailservice/controller/EmailController.class
+com/example/emailservice/service/ConvertJsonToCsv.class
+com/example/emailservice/service/ConvertJsonToCsvImpl.class
+com/example/emailservice/service/EmailService.class
+com/example/emailservice/Message/ResponseMessage.class
+com/example/emailservice/model/EmailDetails.class
+com/example/emailservice/service/EmailServiceImpl.class
+com/example/emailservice/EmailserviceApplication.class

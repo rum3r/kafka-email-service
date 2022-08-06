@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.emailservice.EmailserviceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.919 s <<< FAILURE! - in com.example.emailservice.EmailserviceApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailController': Unsatisfied dependency expressed through field 'emailService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailServiceImpl' defined in file [/home/kuljeetsingh/Desktop/emailservice/target/classes/com/example/emailservice/service/EmailServiceImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'testMethod': Cron expression must consist of 6 fields (found 5 in "*/60 * * * *")
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailServiceImpl' defined in file [/home/kuljeetsingh/Desktop/emailservice/target/classes/com/example/emailservice/service/EmailServiceImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'testMethod': Cron expression must consist of 6 fields (found 5 in "*/60 * * * *")
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'testMethod': Cron expression must consist of 6 fields (found 5 in "*/60 * * * *")
+
